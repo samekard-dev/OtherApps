@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-let appData = [
+fileprivate let appData = [
     AppData(id: 408709785, image: "KOYUMEISHI P", dir: .portrait, description: "KM", descriptionTable: "OtherApps"),
     AppData(id: 409203825, image: "KOYUMEISHI L", dir: .landscape, description: "KM", descriptionTable: "OtherApps"),
     AppData(id: 409201541, image: "KOYUMEISHI P", dir: .portrait, description: "KM", descriptionTable: "OtherApps"),
     AppData(id: 409183694, image: "KOYUMEISHI L", dir: .landscape, description: "KM", descriptionTable: "OtherApps"),
 ]
 
-enum ImageDirection {
+fileprivate enum ImageDirection {
     case portrait
     case landscape
 }
 
-struct AppData {
+fileprivate struct AppData {
     let id: Int
     let image: String
     let dir: ImageDirection
