@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86A724762D7D212B00FDEFDD /* OtherAppsGeneral.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 86A724752D7D212B00FDEFDD /* OtherAppsGeneral.xcstrings */; };
 		86F388482B9DEBFD001B93E3 /* OtherAppsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F388472B9DEBFD001B93E3 /* OtherAppsApp.swift */; };
-		86F3884A2B9DEBFD001B93E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F388492B9DEBFD001B93E3 /* ContentView.swift */; };
 		86F3884C2B9DEBFF001B93E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F3884B2B9DEBFF001B93E3 /* Assets.xcassets */; };
 		86F388502B9DEBFF001B93E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F3884F2B9DEBFF001B93E3 /* Preview Assets.xcassets */; };
 		86F388572B9DEC2C001B93E3 /* OtherApps.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F388562B9DEC2C001B93E3 /* OtherApps.xcassets */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86A724752D7D212B00FDEFDD /* OtherAppsGeneral.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = OtherAppsGeneral.xcstrings; sourceTree = "<group>"; };
 		86F388442B9DEBFD001B93E3 /* OtherApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtherApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F388472B9DEBFD001B93E3 /* OtherAppsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherAppsApp.swift; sourceTree = "<group>"; };
-		86F388492B9DEBFD001B93E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86F3884B2B9DEBFF001B93E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86F3884D2B9DEBFF001B93E3 /* OtherApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OtherApps.entitlements; sourceTree = "<group>"; };
 		86F3884F2B9DEBFF001B93E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -59,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				86F388472B9DEBFD001B93E3 /* OtherAppsApp.swift */,
-				86F388492B9DEBFD001B93E3 /* ContentView.swift */,
 				86F3885C2B9DECD9001B93E3 /* OtherAppsView.swift */,
+				86F388562B9DEC2C001B93E3 /* OtherApps.xcassets */,
+				86F388582B9DEC66001B93E3 /* OtherApps.xcstrings */,
+				86A724752D7D212B00FDEFDD /* OtherAppsGeneral.xcstrings */,
 				86F3884B2B9DEBFF001B93E3 /* Assets.xcassets */,
 				86F3884D2B9DEBFF001B93E3 /* OtherApps.entitlements */,
 				86F3884E2B9DEBFF001B93E3 /* Preview Content */,
-				86F388562B9DEC2C001B93E3 /* OtherApps.xcassets */,
-				86F388582B9DEC66001B93E3 /* OtherApps.xcstrings */,
 			);
 			path = OtherApps;
 			sourceTree = "<group>";
@@ -139,6 +139,7 @@
 			files = (
 				86F388592B9DEC66001B93E3 /* OtherApps.xcstrings in Resources */,
 				86F388502B9DEBFF001B93E3 /* Preview Assets.xcassets in Resources */,
+				86A724762D7D212B00FDEFDD /* OtherAppsGeneral.xcstrings in Resources */,
 				86F3884C2B9DEBFF001B93E3 /* Assets.xcassets in Resources */,
 				86F388572B9DEC2C001B93E3 /* OtherApps.xcassets in Resources */,
 			);
@@ -151,7 +152,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F3884A2B9DEBFD001B93E3 /* ContentView.swift in Sources */,
 				86F388482B9DEBFD001B93E3 /* OtherAppsApp.swift in Sources */,
 				86F3885D2B9DECD9001B93E3 /* OtherAppsView.swift in Sources */,
 			);
@@ -217,6 +217,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -271,6 +272,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};

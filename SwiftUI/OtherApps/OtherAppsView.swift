@@ -7,11 +7,14 @@
 
 import SwiftUI
 
+fileprivate let appTable = "OtherApps"
+fileprivate let storeTable = "OtherAppsGeneral"
+
 fileprivate let appData = [
-    AppData(id: 408709785, image: "KOYUMEISHI P", dir: .portrait, description: "KM", descriptionTable: "OtherApps"),
-    AppData(id: 409203825, image: "KOYUMEISHI L", dir: .landscape, description: "KM", descriptionTable: "OtherApps"),
-    AppData(id: 409201541, image: "KOYUMEISHI P", dir: .portrait, description: "KM", descriptionTable: "OtherApps"),
-    AppData(id: 409183694, image: "KOYUMEISHI L", dir: .landscape, description: "KM", descriptionTable: "OtherApps"),
+    AppData(id: 408709785, image: "KOYUMEISHI P", dir: .portrait, description: "KM"),
+    AppData(id: 409203825, image: "KOYUMEISHI L", dir: .landscape, description: "KM"),
+    AppData(id: 409201541, image: "KOYUMEISHI P", dir: .portrait, description: "KM"),
+    AppData(id: 409183694, image: "KOYUMEISHI L", dir: .landscape, description: "KM"),
 ]
 
 fileprivate enum ImageDirection {
@@ -24,7 +27,6 @@ fileprivate struct AppData {
     let image: String
     let dir: ImageDirection
     let description: LocalizedStringKey
-    let descriptionTable: String?
 }
 
 struct OtherAppsView: View {
@@ -40,8 +42,8 @@ struct OtherAppsView: View {
                                 .scaledToFit()
                                 .frame(maxWidth: 120.0)
                             VStack {
-                                Text(data.description, tableName: data.descriptionTable)
-                                Link("Store",
+                                Text(data.description, tableName: appTable)
+                                Link(String(localized: "Store", table: storeTable),
                                      destination: URL(string: "https://apps.apple.com/app/id\(data.id)")!)
                                 .frame(minHeight: 60)
                             }
@@ -54,8 +56,8 @@ struct OtherAppsView: View {
                                 .scaledToFit()
                                 .frame(maxHeight: 140.0)
                             HStack{
-                                Text(data.description, tableName: data.descriptionTable)
-                                Link("Store", 
+                                Text(data.description, tableName: appTable)
+                                Link(String(localized: "Store", table: storeTable),
                                      destination: URL(string: "https://apps.apple.com/app/id\(data.id)")!)
                                 .frame(minWidth: 80)
                             }
