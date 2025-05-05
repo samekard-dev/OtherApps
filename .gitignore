@@ -1,2 +1,4 @@
 .DS_Store
 xcuserdata/
+/UIKit/DerivedData
+/SwiftUI/DerivedData
