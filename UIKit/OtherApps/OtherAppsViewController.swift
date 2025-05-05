@@ -57,6 +57,7 @@ class OtherAppsViewController: UIViewController {
             let appBaseView = UIView()
             appBaseView.backgroundColor = .systemGray6
             let imageView = UIImageView(image: UIImage(named: appInfo.imageName))
+            imageView.layer.minificationFilter = .trilinear//縮小に適する
             imageView.contentMode = .scaleAspectFit
             let introductionLabel = UILabel()
             introductionLabel.numberOfLines = 0

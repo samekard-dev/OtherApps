@@ -39,6 +39,7 @@ struct OtherAppsView: View {
                         HStack(spacing: 20.0) {
                             Image(data.image, bundle: nil)
                                 .resizable()
+                                .interpolation(.high)
                                 .scaledToFit()
                                 .frame(maxWidth: 120.0)
                             VStack {
@@ -53,6 +54,7 @@ struct OtherAppsView: View {
                         VStack(spacing: 20.0) {
                             Image(data.image)
                                 .resizable()
+                                .interpolation(.high)
                                 .scaledToFit()
                                 .frame(maxHeight: 140.0)
                             HStack{
