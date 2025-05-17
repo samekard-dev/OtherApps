@@ -79,8 +79,8 @@ class OtherAppsViewController: UIViewController {
         view.addSubview(scrollView)
         
         closeButton.setTitle(NSLocalizedString("Close", tableName: "OtherApps", comment: ""), for: .normal)
-        closeButton.addAction(UIAction(handler: { _ in
-            self.dismiss(animated: true)
+        closeButton.addAction(UIAction(handler: {[weak self] _ in
+            self?.dismiss(animated: true)
         }), for: .touchUpInside)
         
         view.addSubview(closeButton)
